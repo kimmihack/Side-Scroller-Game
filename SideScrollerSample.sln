@@ -1,14 +1,18 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{5948E6EB-F16B-2BA6-0088-A02A4BEE118D}") = "SideScrollerSample", "Assembly-CSharp.csproj", "{B8C6B510-10A5-A95F-C2E6-E4229141EDD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{B8C6B510-10A5-A95F-C2E6-E4229141EDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C6B510-10A5-A95F-C2E6-E4229141EDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C6B510-10A5-A95F-C2E6-E4229141EDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C6B510-10A5-A95F-C2E6-E4229141EDD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
