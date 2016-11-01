@@ -41,13 +41,20 @@ public class PlayerController : MonoBehaviour {
 			amGrounded = true;
 		}
 
-		if (Input.GetKeyDown (KeyCode.D)) 
+		if (Input.GetKey(KeyCode.D)) 
 		{
 			GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
-		if (Input.GetKeyDown (KeyCode.A)) 
+
+		if (Input.GetKey(KeyCode.A))  
 		{
 			GetComponent<Rigidbody2D> ().velocity = new Vector2 (- moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+		}
+
+		/* Stopping the sliding */
+		if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) )
+		{
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (0, GetComponent<Rigidbody2D>().velocity.y);
 		}
 
 
